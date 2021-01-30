@@ -13,23 +13,23 @@ MonoBehaviour:
   m_Name: ColorProfiles
   m_EditorClassIdentifier: 
   _profiles:
-  - playerColor: {r: 0.43921572, g: 0.4666667, b: 0.4901961, a: 1}
-    playerLightColor: {r: 0.4392157, g: 0.46666667, b: 0.49019608, a: 1}
-  - playerColor: {r: 1, g: 0.30588236, b: 0.28235295, a: 1}
-    playerLightColor: {r: 1, g: 0.30588236, b: 0.28235295, a: 1}
-  - playerColor: {r: 0, g: 0.7490196, b: 0.90196085, a: 1}
-    playerLightColor: {r: 0, g: 0.7490196, b: 0.9019608, a: 1}
-  - playerColor: {r: 0.7960785, g: 0.9607844, b: 0.16470589, a: 1}
-    playerLightColor: {r: 0.79607844, g: 0.9607843, b: 0.16470589, a: 1}
-  - playerColor: {r: 0, g: 0.9058824, b: 0.18039216, a: 1}
-    playerLightColor: {r: 0, g: 0.90588236, b: 0.18039216, a: 1}
   - playerColor: {r: 1, g: 0.18039216, b: 0.52156866, a: 1}
     playerLightColor: {r: 1, g: 0.18039216, b: 0.52156866, a: 1}
+  - playerColor: {r: 0, g: 0.7490196, b: 0.90196085, a: 1}
+    playerLightColor: {r: 0, g: 0.7490196, b: 0.9019608, a: 1}
+  - playerColor: {r: 0.7137255, g: 0.043137256, b: 0.7137255, a: 1}
+    playerLightColor: {r: 0.7137255, g: 0.043137256, b: 0.7137255, a: 1}
+  - playerColor: {r: 0.7960785, g: 0.9607844, b: 0.16470589, a: 1}
+    playerLightColor: {r: 0.79607844, g: 0.9607843, b: 0.16470589, a: 1}
+  - playerColor: {r: 1, g: 0.69803923, b: 0, a: 1}
+    playerLightColor: {r: 1, g: 0.69803923, b: 0, a: 1}
+  - playerColor: {r: 0, g: 0.9058824, b: 0.18039216, a: 1}
+    playerLightColor: {r: 0, g: 0.90588236, b: 0.18039216, a: 1}
   - playerColor: {r: 1, g: 0, b: 0.20784315, a: 1}
     playerLightColor: {r: 1, g: 0, b: 0.20784314, a: 1}
   - playerColor: {r: 0.23529413, g: 0.34117648, b: 0.78823537, a: 1}
     playerLightColor: {r: 0.23529412, g: 0.34117648, b: 0.7882353, a: 1}
-  - playerColor: {r: 0.7137255, g: 0.043137256, b: 0.7137255, a: 1}
-    playerLightColor: {r: 0.7137255, g: 0.043137256, b: 0.7137255, a: 1}
-  - playerColor: {r: 1, g: 0.69803923, b: 0, a: 1}
-    playerLightColor: {r: 1, g: 0.69803923, b: 0, a: 1}
+  - playerColor: {r: 1, g: 0.30588236, b: 0.28235295, a: 1}
+    playerLightColor: {r: 1, g: 0.30588236, b: 0.28235295, a: 1}
+  - playerColor: {r: 0.43921572, g: 0.4666667, b: 0.4901961, a: 1}
+    playerLightColor: {r: 0.4392157, g: 0.46666667, b: 0.49019608, a: 1}

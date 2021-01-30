@@ -9,11 +9,13 @@
 		[SerializeField] private Light2D _light;
 		[SerializeField] private GameObject _virtualCamera;
 		[SerializeField] private Camera _camera;
+		[SerializeField] private Animator _animator;
 
 		public SpriteRenderer Renderer => _renderer;
 		public Light2D Light => _light;
 		public GameObject VirtualCamera => _virtualCamera;
 		public Camera Camera => _camera;
+		public Animator Animator => _animator;
 
 		public void SetupLayer(int playerIndex)
 		{
@@ -25,7 +27,7 @@
 			              | (1 << 2)
 			              | (1 << 4)
 			              | (1 << 5)
-			              | (1 << 8);
+			              | (1 << 10);
 			_camera.cullingMask = bitMask;
 			_camera.gameObject.layer = layer;
 		}

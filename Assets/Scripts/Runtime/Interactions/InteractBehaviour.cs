@@ -1,21 +1,22 @@
 ﻿namespace Guyl.ObjetsTrouves
 {
-	using System;
 	using System.Collections;
 	using Inputs;
 	using UnityEngine;
-
-	[RequireComponent(typeof(Collider2D))]
+	
+	[RequireComponent(typeof(PlayerProxy))]
 	public class InteractBehaviour : MonoBehaviour, IActionHandler
 	{
 		private Coroutine _deactivationRoutine;
-		private Collider2D _collider;
-		
+		private PlayerProxy _player;
+		[SerializeField] private Collider2D _collider;
+		private static readonly int USE = Animator.StringToHash("Use");
+
 		public bool Performed { get; set; }
 
 		private void Awake()
 		{
-			_collider = GetComponent<Collider2D>();
+			_player = GetComponent<PlayerProxy>();
 			_collider.enabled = false;
 		}
 
@@ -40,8 +41,10 @@
 				StopCoroutine(_deactivationRoutine);
 			}
 
+			_player.Animator.SetBool(USE, true);
 			_collider.enabled = true;
 
+			
 			_deactivationRoutine = StartCoroutine(DeactivationRoutine());
 		}
 		
@@ -49,6 +52,7 @@
 		{
 			yield return null;
 			_collider.enabled = false;
+			_player.Animator.SetBool(USE, false);
 		}
 	}
 }

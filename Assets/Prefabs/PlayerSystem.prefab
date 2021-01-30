@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 8860761393756708846}
   - component: {fileID: 6743412861257759757}
   - component: {fileID: 3640418417828845386}
+  - component: {fileID: 5004032775973237577}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -135,6 +136,7 @@ MonoBehaviour:
   _light: {fileID: 2909602450105305963}
   _virtualCamera: {fileID: 787158209862264397}
   _camera: {fileID: 787158211112008827}
+  _animator: {fileID: 2633646720377312795}
 --- !u!114 &787158209880563422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +182,7 @@ MonoBehaviour:
   _moveAction: {fileID: -6351542436001673471, guid: ba68e3a8b10aeb44a9eacbe3978fb693, type: 3}
   _twoDimMovement: {fileID: 3640418417828845386}
   _interactAction: {fileID: -8001990129169217050, guid: ba68e3a8b10aeb44a9eacbe3978fb693, type: 3}
-  _interactBehaviour: {fileID: 4241867366200922864}
+  _interactBehaviour: {fileID: 5004032775973237577}
 --- !u!50 &6743412861257759757
 Rigidbody2D:
   serializedVersion: 4
@@ -220,6 +222,25 @@ MonoBehaviour:
     _constant: {fileID: 11400000, guid: d2c8404950aee2b4ebda569d8b84e8eb, type: 2}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
+  _animationEpsilon:
+    _usage: 0
+    _value: 0.1
+    _constant: {fileID: 0}
+    _variable: {fileID: 0}
+    _variableInstancer: {fileID: 0}
+--- !u!114 &5004032775973237577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787158209880563421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56923902a92c41ad853d10253848bd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collider: {fileID: 5486680159482093241}
 --- !u!1 &787158210010870212
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 787158210010870213}
   - component: {fileID: 787158210010870214}
+  - component: {fileID: 2633646720377312795}
   m_Layer: 0
   m_Name: Render
   m_TagString: Untagged
@@ -290,7 +312,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -2196283525902991940, guid: 0527334f1363bd0479aa3516b6407456, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -302,6 +324,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2633646720377312795
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787158210010870212}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9325cdc6a85017b45b1364f333da4dbe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &787158210066732117
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,9 +520,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.02}
   serializedVersion: 2
-  m_Radius: 0.08
+  m_Radius: 0.06
 --- !u!1 &787158210959245238
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,7 +707,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7866127876221568283}
-  - component: {fileID: 4241867366200922864}
   - component: {fileID: 5486680159482093241}
   m_Layer: 0
   m_Name: InteractTrigger
@@ -689,18 +729,6 @@ Transform:
   m_Father: {fileID: 787158209880563423}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4241867366200922864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871287178927142610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56923902a92c41ad853d10253848bd4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &5486680159482093241
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -802,7 +830,7 @@ MonoBehaviour:
   m_UseNormalMap: 0
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
-  m_ShadowIntensity: 0
+  m_ShadowIntensity: 1
   m_ShadowVolumeIntensity: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360

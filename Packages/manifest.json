@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.unity-atoms.unity-atoms-base-atoms": "4.4.2",
+    "com.unity-atoms.unity-atoms-core": "4.4.2",
     "com.unity.2d.animation": "5.0.3",
     "com.unity.2d.pixel-perfect": "4.0.1",
     "com.unity.2d.psdimporter": "4.0.2",
@@ -14,6 +16,7 @@
     "com.unity.ide.visualstudio": "2.0.5",
     "com.unity.ide.vscode": "1.2.3",
     "com.unity.inputsystem": "1.0.2",
+    "com.unity.progrids": "3.0.3-preview.6",
     "com.unity.quicksearch": "2.0.2",
     "com.unity.render-pipelines.universal": "10.2.2",
     "com.unity.test-framework": "1.1.22",
@@ -21,6 +24,7 @@
     "com.unity.timeline": "1.4.6",
     "com.unity.ugui": "1.0.0",
     "dev.bolt.addons": "https://github.com/RealityStop/Bolt.Addons.Community.git",
+    "me.guyl.atoms-vs": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
@@ -51,10 +55,7 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.unity-atoms.unity-atoms-core": "4.4.2",
-    "com.unity-atoms.unity-atoms-base-atoms": "4.4.2",
-    "me.guyl.atoms-vs": "1.0.0"
+    "com.unity.modules.xr": "1.0.0"
   },
   "scopedRegistries": [
     {

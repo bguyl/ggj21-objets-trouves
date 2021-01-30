@@ -7,7 +7,7 @@
 	{
 		public void Interact()
 		{
-			Debug.Log("Interacted !");
+			gameObject.SetActive(false);
 		}
 	}
 }

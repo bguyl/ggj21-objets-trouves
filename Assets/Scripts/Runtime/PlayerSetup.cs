@@ -8,6 +8,7 @@
 	public class PlayerSetup : MonoBehaviour
 	{
 		[SerializeField] private ColorProfiles _colorProfiles;
+		[SerializeField] private AnimatorProfiles _animatorProfiles;
 		private PlayerInputManager _manager;
 
 		private void Awake()
@@ -25,6 +26,7 @@
 			ColorProfiles.ColorProfile colors = _colorProfiles.Profiles[player.playerIndex];
 			proxy.Renderer.color = colors.playerColor;
 			proxy.Light.color = colors.playerLightColor;
+			proxy.Animator.runtimeAnimatorController = _animatorProfiles.Profiles[player.playerIndex];
 		}
 	}
 }

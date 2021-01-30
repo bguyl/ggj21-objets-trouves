@@ -3,7 +3,7 @@
   <component name="ContentModelUserStore">
     <attachedFolders />
     <explicitIncludes>
-      <Path>Assets</Path>
+      <Path>Library/PackageCache/com.realitystop.linkmerge@1.0.0</Path>
       <Path>Library/PackageCache/com.unity-atoms.unity-atoms-base-atoms@4.4.2</Path>
       <Path>Library/PackageCache/com.unity-atoms.unity-atoms-core@4.4.2</Path>
       <Path>Library/PackageCache/com.unity.2d.animation@5.0.3</Path>
@@ -31,6 +31,7 @@
       <Path>Library/PackageCache/com.unity.textmeshpro@3.0.3</Path>
       <Path>Library/PackageCache/com.unity.timeline@1.4.6</Path>
       <Path>Library/PackageCache/dev.bolt.addons@119ecfa151</Path>
+      <Path>Library/PackageCache/me.guyl.atoms-vs@1.0.0</Path>
       <Path>Packages</Path>
       <Path>ProjectSettings</Path>
     </explicitIncludes>

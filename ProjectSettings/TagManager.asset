@@ -11,11 +11,11 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - PlayerCam1
+  - PlayerCam2
+  - PlayerCam3
+  - PlayerCam4
+  - PlayerPhysic
   - 
   - 
   - 

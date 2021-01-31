@@ -22,6 +22,7 @@ namespace Guyl.ObjetsTrouves
         [SerializeField] private FloatReference _fadeAnimationTime = new FloatReference(0.5f);
         [SerializeField] private TMP_Text _found;
 
+        private bool _onVictoryLocker = false;
         private int _currentLevel = 0;
         private LoadSceneParameters _scenesParameters;
         private Scene loadedScene;
@@ -60,6 +61,8 @@ namespace Guyl.ObjetsTrouves
 
         private async void OnVictory(Void obj)
         {
+            if(_onVictoryLocker) return;
+            _onVictoryLocker = true;
             _currentLevel++;
 
             float alpha = 0f;
@@ -70,6 +73,9 @@ namespace Guyl.ObjetsTrouves
                 alpha = Mathf.Lerp(0f, 1f, time / _fadeAnimationTime);
                 await UniTask.Yield(PlayerLoopTiming.FixedUpdate);
                 time += Time.fixedDeltaTime;
+                
+                if (_fader.IsDestroyed()) return;
+
                 _fader.color = new Color(_fader.color.r, _fader.color.g, _fader.color.b, alpha);
             }
             
@@ -78,7 +84,7 @@ namespace Guyl.ObjetsTrouves
             {
                 await UniTask.Yield();
             }
-            
+                
             _found.gameObject.SetActive(true);
 
             if (_currentLevel < _levels.Count)
@@ -89,9 +95,24 @@ namespace Guyl.ObjetsTrouves
                 {
                     await Task.Yield();
                 }
+
+                LevelProxy level = loadedScene.GetRootGameObjects()[0].GetComponent<LevelProxy>();
+
+                if (level != null)
+                {
+                    List<PlayerInput> list = _playerInputManager.GetComponent<PlayerSetup>().InstanciatedPlayers;
+
+                    for (int i = 0; i < list.Count; i++)
+                    {
+                        PlayerInput player = list[i];
+                        player.transform.position = level.PlayerSpawners[i].position;
+                        await UniTask.Yield(PlayerLoopTiming.Update);
+                        player.GetComponent<VictoryChecker>().Reset();
+                    }
+                }
                 
                 await UniTask.Delay(TimeSpan.FromSeconds(2));
-
+                
                 alpha = 1f;
                 time = 0f;
                 _found.gameObject.SetActive(false);
@@ -104,24 +125,12 @@ namespace Guyl.ObjetsTrouves
                     _fader.color = new Color(_fader.color.r, _fader.color.g, _fader.color.b, alpha);
                 }
 
-                LevelProxy level = loadedScene.GetRootGameObjects()[0].GetComponent<LevelProxy>();
-
-                if (level != null)
-                {
-                    List<PlayerInput> list = _playerInputManager.GetComponent<PlayerSetup>().InstanciatedPlayers;
-
-                    for (int i = 0; i < list.Count; i++)
-                    {
-                        PlayerInput player = list[i];
-                        player.GetComponent<VictoryChecker>().Reset();
-                        player.transform.position = level.PlayerSpawners[i].position;
-                    }
-                }
             }
             else
             {
                 SceneManager.LoadScene("ThanksScene");
             }
+            _onVictoryLocker = false;
         }
     }
 }

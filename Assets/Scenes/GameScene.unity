@@ -924,15 +924,6 @@ MonoBehaviour:
     _constant: {fileID: 11400000, guid: 0a4c810339760ee4d9257bc394b38b3a, type: 2}
     _variable: {fileID: 0}
     _variableInstancer: {fileID: 0}
-  - _usage: 1
-    _value:
-      _sceneAsset: {fileID: 0}
-      _sceneName: 
-      _scenePath: 
-      _buildIndex: -1
-    _constant: {fileID: 11400000, guid: 69ba938e417ac074c8bc1513c3063228, type: 2}
-    _variable: {fileID: 0}
-    _variableInstancer: {fileID: 0}
   _playerInputManager: {fileID: 707580551}
   _onVictory: {fileID: 11400000, guid: 43c6ea66ef33d3648aa7170ff8fd79c9, type: 2}
   _fader: {fileID: 1409772696}

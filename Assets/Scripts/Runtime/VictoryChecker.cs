@@ -19,9 +19,10 @@
 			set => _victoryEvent = value;
 		}
 
+		[ContextMenu("Reset")]
 		public void Reset()
 		{
-			_playerInput.enabled = true;
+			_playerInput.ActivateInput();
 			_victoryEventTriggered = false;
 			enabled = true;
 		}
@@ -36,7 +37,7 @@
 			if (_victoryEventTriggered)
 			{
 				enabled = false;
-				_playerInput.enabled = false;
+				_playerInput.DeactivateInput();
 				return;
 			}
 
@@ -52,8 +53,6 @@
 			{
 				_victoryEventTriggered = true;
 				_victoryEvent.Raise();
-				enabled = false;
-				_playerInput.enabled = false;
 			}
 		}
 

@@ -9,13 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b70acdb389591f41a562b92494bd37f, type: 3}
-  m_Name: Level3
+  m_Script: {fileID: 11500000, guid: a0635ac2f70594bd3a31a5ced16469dc, type: 3}
+  m_Name: Level3_JailDoor
   m_EditorClassIdentifier: 
   _developerDescription: 
-  _id: 
-  _value:
-    _sceneAsset: {fileID: 102900000, guid: 4133bfe880564d94eb21e397f75f1b46, type: 3}
-    _sceneName: Level3
-    _scenePath: Assets/Scenes/Level3.unity
-    _buildIndex: 6
+  _replayBufferSize: 0
+  _inspectorRaiseValue: 0

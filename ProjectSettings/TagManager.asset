@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 3709966631
+    locked: 0
+  - name: Landmarks
+    uniqueID: 890489723
+    locked: 0
+  - name: Physics
+    uniqueID: 3269810129
+    locked: 0
+  - name: Players
+    uniqueID: 2972724387
+    locked: 0
+  - name: Mask
+    uniqueID: 3301089219
+    locked: 0

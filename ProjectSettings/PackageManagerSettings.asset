@@ -43,6 +43,8 @@ MonoBehaviour:
     m_Name: package.openupm.com
     m_Url: https://package.openupm.com
     m_Scopes:
+    - com.coffee.softmask-for-ugui
+    - com.coffee.unmask
     - com.cysharp.unitask
     - com.openupm
     - com.realitystop.linkmerge

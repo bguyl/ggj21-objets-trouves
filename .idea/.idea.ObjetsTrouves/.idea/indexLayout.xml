@@ -3,6 +3,8 @@
   <component name="ContentModelUserStore">
     <attachedFolders />
     <explicitIncludes>
+      <Path>Library/PackageCache/com.coffee.softmask-for-ugui@1.0.0-preview.14</Path>
+      <Path>Library/PackageCache/com.coffee.unmask@1.2.0</Path>
       <Path>Library/PackageCache/com.cysharp.unitask@2.1.1</Path>
       <Path>Library/PackageCache/com.realitystop.linkmerge@1.0.0</Path>
       <Path>Library/PackageCache/com.unity-atoms.unity-atoms-base-atoms@4.4.2</Path>

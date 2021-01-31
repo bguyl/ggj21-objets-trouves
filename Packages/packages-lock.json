@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.cysharp.unitask": {
+      "version": "2.1.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.realitystop.linkmerge": {
       "version": "1.0.0",
       "depth": 1,
@@ -21,6 +28,36 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {},
+      "url": "https://registry.npmjs.org"
+    },
+    "com.unity-atoms.unity-atoms-mono-hooks": {
+      "version": "4.4.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity-atoms.unity-atoms-core": "4.4.2",
+        "com.unity-atoms.unity-atoms-base-atoms": "4.4.2"
+      },
+      "url": "https://registry.npmjs.org"
+    },
+    "com.unity-atoms.unity-atoms-scene-mgmt": {
+      "version": "4.4.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity-atoms.unity-atoms-core": "4.4.2",
+        "com.unity-atoms.unity-atoms-base-atoms": "4.4.2"
+      },
+      "url": "https://registry.npmjs.org"
+    },
+    "com.unity-atoms.unity-atoms-tags": {
+      "version": "4.4.2",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity-atoms.unity-atoms-core": "4.4.2",
+        "com.unity-atoms.unity-atoms-base-atoms": "4.4.2"
+      },
       "url": "https://registry.npmjs.org"
     },
     "com.unity.2d.animation": {

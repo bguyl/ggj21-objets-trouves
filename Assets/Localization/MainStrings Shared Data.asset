@@ -31,6 +31,26 @@ MonoBehaviour:
     m_Key: PressToStart
     m_Metadata:
       m_Items: []
+  - m_Id: 207260300124160
+    m_Key: Thanks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 207522083414016
+    m_Key: FullCredits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 207839466397696
+    m_Key: BackToMainMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213831524589568
+    m_Key: CreatedBy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 238730267893760
+    m_Key: Found
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

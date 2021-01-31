@@ -34,5 +34,29 @@ MonoBehaviour:
     m_Localized: Press <sprite=0>, <sprite=1>, <sprite=2> or Space to start
     m_Metadata:
       m_Items: []
+  - m_Id: 207260300124160
+    m_Localized: Thanks for playing!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 207522083414016
+    m_Localized: 'Programming, GameDesign, SoundDesign: Bastien Guyl
+
+
+      Graphical
+      assets: Kenney (www.kenney.nl)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 207839466397696
+    m_Localized: Back to main menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213831524589568
+    m_Localized: Created by Guyl B.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 238730267893760
+    m_Localized: We found each other!
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

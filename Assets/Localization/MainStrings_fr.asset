@@ -34,5 +34,26 @@ MonoBehaviour:
     m_Localized: Appuie sur <sprite=0>, <sprite=1>, <sprite=2> ou Espace pour commencer
     m_Metadata:
       m_Items: []
+  - m_Id: 207260300124160
+    m_Localized: "Merci d'avoir jou\xE9 !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 207522083414016
+    m_Localized: "Programmation, GameDesign, SoundDesign : Bastien Guyl\n\n\xC9lements
+      graphiques : Kenney (www.kenney.nl)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 207839466397696
+    m_Localized: Retour au menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 213831524589568
+    m_Localized: "R\xE9alis\xE9 par Guyl B."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 238730267893760
+    m_Localized: "Nous nous sommes retrouv\xE9s !"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

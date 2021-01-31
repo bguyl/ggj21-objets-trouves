@@ -3,9 +3,13 @@
   <component name="ContentModelUserStore">
     <attachedFolders />
     <explicitIncludes>
+      <Path>Library/PackageCache/com.cysharp.unitask@2.1.1</Path>
       <Path>Library/PackageCache/com.realitystop.linkmerge@1.0.0</Path>
       <Path>Library/PackageCache/com.unity-atoms.unity-atoms-base-atoms@4.4.2</Path>
       <Path>Library/PackageCache/com.unity-atoms.unity-atoms-core@4.4.2</Path>
+      <Path>Library/PackageCache/com.unity-atoms.unity-atoms-mono-hooks@4.4.2</Path>
+      <Path>Library/PackageCache/com.unity-atoms.unity-atoms-scene-mgmt@4.4.2</Path>
+      <Path>Library/PackageCache/com.unity-atoms.unity-atoms-tags@4.4.2</Path>
       <Path>Library/PackageCache/com.unity.2d.animation@5.0.3</Path>
       <Path>Library/PackageCache/com.unity.2d.common@4.0.3</Path>
       <Path>Library/PackageCache/com.unity.2d.path@4.0.1</Path>

@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/DebugLevel.unity
-    guid: 6d7d0c0a2491c3d4fafb9bd271a77a4b
-  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: f89006e9feac60d4ab1635b97ddf6a4a
   - enabled: 1
@@ -24,11 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3.unity
     guid: 4133bfe880564d94eb21e397f75f1b46
   - enabled: 1
-    path: Assets/Scenes/ThanksScene.unity
-    guid: 7888b544f02e2164db39c1c750528192
-  - enabled: 1
     path: Assets/Scenes/Level4.unity
     guid: 8a11e9cdea275394cb85b8d8b7684e76
+  - enabled: 1
+    path: Assets/Scenes/ThanksScene.unity
+    guid: 7888b544f02e2164db39c1c750528192
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: e149ee7dd41feac4994bcfc0a0027062, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 34a8993648dc64a4e9fa4b3d34638ed5, type: 2}

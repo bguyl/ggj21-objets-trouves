@@ -30,7 +30,7 @@ namespace Guyl.ObjetsTrouves
         private async void Start()
         {
             _scenesParameters = new LoadSceneParameters(LoadSceneMode.Additive);
-            loadedScene = SceneManager.LoadScene(_levels[_currentLevel].Value.BuildIndex, _scenesParameters);
+            loadedScene = SceneManager.LoadScene(_levels[_currentLevel].Value.SceneName, _scenesParameters);
 
             while (!loadedScene.isLoaded)
             {
@@ -89,7 +89,7 @@ namespace Guyl.ObjetsTrouves
 
             if (_currentLevel < _levels.Count)
             {
-                loadedScene = SceneManager.LoadScene(_levels[_currentLevel].Value.BuildIndex, _scenesParameters);
+                loadedScene = SceneManager.LoadScene(_levels[_currentLevel].Value.SceneName, _scenesParameters);
                 
                 while (!loadedScene.isLoaded)
                 {

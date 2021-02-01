@@ -39,11 +39,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 207522083414016
-    m_Localized: 'Programming, GameDesign, SoundDesign: Bastien Guyl
+    m_Localized: 'Programming, GameDesign: Bastien Guyl
 
 
-      Graphical
-      assets: Kenney (www.kenney.nl)'
+      Graphical assets:
+      Kenney (www.kenney.nl)
+
+
+      Special thanks to Manon Bargier for testing
+      and support!'
     m_Metadata:
       m_Items: []
   - m_Id: 207839466397696
